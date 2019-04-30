@@ -20,6 +20,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 choco install habitat -y
 choco install git -y
 choco install googlechrome -y
+choco install docker-desktop -y
 ```
 
 Close and reopen your Powershell console to refresh the changed `PATH`.
