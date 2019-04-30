@@ -29,7 +29,7 @@ Navigate to `c:\`. The SQL Server installer can fail if the install path is too 
 
 ```
 cd c:\
-git clone https://github.com/habitat-sh/sqlwebadmin
+git clone https://github.com/anthonygrees/sqlwebadmin
 cd sqlwebadmin
 ```
 
