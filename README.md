@@ -33,7 +33,28 @@ git clone https://github.com/anthonygrees/sqlwebadmin
 cd sqlwebadmin
 ```
 
-Setup a local default origin and key by running `hab setup` then enable the `INSTALL_HOOK` feature:
+Setup a local default origin and key by running `hab setup` 
+
+```
+C:\sqlwebadmin [master ≡]> hab setup
+
+Habitat CLI Setup
+=================
+
+  Welcome to hab setup. Let's get started.
+
+Habitat Builder Instance
+
+  Habitat packages can be stored in either the public builder instance
+  https://bldr.habitat.sh or in an on-premises builder depot instance. If
+  you do not set a builder URL now, the `hab` CLI will default to using
+  the public builder instance. This can be overridden at any time after
+  setup.
+
+Connect to an on-premises bldr instance? [Yes/no/quit]
+```
+
+Next enable the `INSTALL_HOOK` feature:
 
 ```
 $env:HAB_FEAT_INSTALL_HOOK=$true
