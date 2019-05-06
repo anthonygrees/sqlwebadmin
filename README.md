@@ -145,3 +145,11 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(d
 ```
 
 Browsing to `http://<CONTAINER_IP>:8099/databases.aspx` should bring up the application.
+
+### How does Habitat look from a Windows perspective ?
+
+The Windows Regisrty see's MS SQL like this.
+![Registry](/images/Registry.png)
+
+The Windows Event Viewer sees MS SQL running as a service.
+![EventViewer](/images/EventViewer.png)
