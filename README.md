@@ -88,7 +88,7 @@ sqlserver2005.default hook[post-run]:(HK): 1> 2> 3> 4> 5> 6> Application user se
 Now load `<your_origin>/sqlwebadmin`:
 
 ```
-hab svc load <your_origin>/sqlwebadmin --bind database:sqlserver2005.default
+hab svc load anthonyrees/sqlwebadmin --bind database:sqlserver2005.default
 ```
 
 In the Supervisor log wait for:
