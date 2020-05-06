@@ -25,6 +25,11 @@ choco install docker-desktop -y
 
 Close and reopen your Powershell console to refresh the changed `PATH`.
 
+Fix the TLS issue by running:
+```
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value '1' -Type DWord
+```
+
 Navigate to `c:\`. The SQL Server installer can fail if the install path is too long. Entering into a local studio at `c:\users\administrators\sqlwebadmin` will result in a much longer install path than entering from `c:\sqlwebadmin`. Clone this repo and `cd` into the top level directory:
 
 ```
